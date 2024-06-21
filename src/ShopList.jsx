@@ -2,6 +2,8 @@ import React from "react";
 
 function ShopList({ cart, setCart }) {
   return (
+
+     /*To display all the products, home page and about by navigating */
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container px-4 px-lg-5">
         <a className="navbar-brand" href="#!">
@@ -18,6 +20,8 @@ function ShopList({ cart, setCart }) {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
+        {/* Navigation Links */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
             <li className="nav-item">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Card({ cart, setCart, product }) {
-  let [outCart, setOutCart] = useState(true);
+  const [outCart, setOutCart] = useState(true);
 
   return (
     <div className="col mb-5">
@@ -50,6 +50,7 @@ function Card({ cart, setCart, product }) {
         <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
           <div className="text-center">
             {outCart ? (
+                // To add the products to the cart
               <button
                 className="btn btn-outline-success mt-auto"
                 href="#"
@@ -61,6 +62,7 @@ function Card({ cart, setCart, product }) {
                 Add to Cart
               </button>
             ) : (
+                // To remove the products from the cart
               <button
                 className="btn btn-outline-danger mt-auto"
                 href="#"

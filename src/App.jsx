@@ -7,8 +7,8 @@ import Card from "./Card";
 import Copyright from "./Copyright";
 
 function App() {
-  let [cart, setCart] = useState(0);
-  let datas = [
+  const [cart, setCart] = useState(0);
+  const datas = [
     {
       name: "Fancy Product",
       image: "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
